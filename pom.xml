@@ -96,7 +96,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://34.205.32.230:8081/repository/paypal-release/</url>
+	      <url>http://34.205.32.230:8081/repository/paypal-prod/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-app</finalName>
+		<finalName>paypal-prod</finalName>
 		
 		<plugins>
 			<plugin>
