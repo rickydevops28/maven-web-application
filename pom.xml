@@ -96,19 +96,19 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://18.233.96.25:8081/repository/paypal-prod/</url>
+	      <url>http://44.201.160.229:8081/repository/paypal-prod/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://34.205.32.230:8081/repository/paypal-snapshot/</url>
+	      <url>http://44.201.160.229:8081/repository/paypal-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>paypal-prod</finalName>
+		<finalName>ebay-sharedlib</finalName>
 		
 		<plugins>
 			<plugin>
