@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>paypalnew</finalName>
+		<finalName>paypalnew2</finalName>
 		
 		<plugins>
 			<plugin>
