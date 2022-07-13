@@ -96,7 +96,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://54.164.234.100:8081/repository/paypalnew/</url>
+	      <url>http://54.164.234.100:8081/repository/paypalnew3/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>paypalnew2</finalName>
+		<finalName>paypalnew3</finalName>
 		
 		<plugins>
 			<plugin>
