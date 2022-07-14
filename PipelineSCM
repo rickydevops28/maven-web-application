@@ -16,15 +16,15 @@ node{
  } 
   stage('5deploy_uat'){
     //sh "scp "
-    deploy adapters: [tomcat9(credentialsId: 'tomcatCredentials', path: '', url: 'http://http://18.212.211.187:8080/')], contextPath: null, war: 'target/*war'
-  }
+     deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://18.212.211.187:8080/')], contextPath: null, onFailure: false, war: 'target/*war'
+     }
  stage('6Approval'){
     timeout(time:9, unit:'HOURS') {
         input message: 'Application ready for deployment, Please review and approve'
     }
  }
  stage('7deploy_prod'){
-     deploy adapters: [tomcat9(credentialsId: 'tomcatCredentials', path: '', url: 'http://18.212.211.187:8080/')], contextPath: null, war: 'target/*war'
+ deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://18.212.211.187:8080/')], contextPath: null, onFailure: false, war: 'target/*war'
  }
  stage('8Notification'){
     // Pipeline Syntax 
